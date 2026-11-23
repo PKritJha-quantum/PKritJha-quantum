@@ -6,12 +6,12 @@
 
 ---
 
-### 🦊 `dossier.yml`
+### 🦊 `About Me`
 ```yaml
 identity:
   name: "Priyakriti (also called PJ)"
-  approach: "Research-driven & cross-disciplinary"
-  mission: "Integrating software skills with unconventional domains to build clever, useful tools."
+  approach: "Cross-disciplinary Research | Problem solving | Critical Thinking"
+  mission: "Integrating software skills with unconventional domains to build clever, useful tools | Participating in Hackathons | To Learn and Grow"
 ```
 
 ---
@@ -20,7 +20,7 @@ identity:
 
 | Domain | Focus & Curiosity | Core Stack |
 | :--- | :--- | :--- |
-| **Software & Systems** | Clean architectures, automation, & reproducible workflows | `Python` `TypeScript` `Git` `Linux` |
+| **Software & Systems** | Clean architectures, automation, & reproducible workflows | `Python` `JS` `OpenCV` `GitHub` |
 | **Cross-Field Integration** | Blending code **In Cross-domains** | Data modeling, rapid prototyping, & analysis |
 
 ---
