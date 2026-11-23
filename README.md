@@ -42,12 +42,6 @@ identity:
 - <b>First Principles:</b> Understand the domain problem deeply before writing a single line of code.<br/>
 - <b>Atomic Craft:</b> Build algorithm, Clear documentation, and Maintainable systems.
 
-<summary><b>🟢TechStack</b></summary>
-<br/>
-- <b>First Principles:</b> Understand the domain problem deeply before writing a single line of code.<br/>
-- <b>Atomic Craft:</b> Build algorithm, Clear documentation, and Maintainable systems.
-</details>
-
 ---
 
 ### 📫 Connect
