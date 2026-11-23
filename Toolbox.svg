@@ -11,6 +11,11 @@
     <rect x="28" y="52" width="145" height="42" rx="8" fill="#0B1914" stroke="#10B981" stroke-width="1.5"/>
     <text x="100" y="78" fill="#FBBF24" text-anchor="middle">PYTHON</text>
 
+    
+    <rect x="188" y="52" width="165" height="42" rx="8" fill="#0B1914" stroke="#10B981" stroke-width="1.5"/>
+    <text x="270" y="78" fill="#FBBF24" text-anchor="middle">MATLAB</text>
+
+
     <rect x="368" y="52" width="145" height="42" rx="8" fill="#0B1914" stroke="#10B981" stroke-width="1.5"/>
     <text x="440" y="78" fill="#FBBF24" text-anchor="middle">REACT</text>
 
