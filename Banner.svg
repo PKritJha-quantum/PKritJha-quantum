@@ -95,7 +95,7 @@
 
   <!-- Top Tag with Blinking Cursor -->
   <text x="48" y="62" fill="#10B981" font-family="monospace" font-size="14" letter-spacing="2.5">
-    // CURIOUS FOX • RESEARCH &amp; INTERDISCIPLINARY CODE
+    // CURIOUS FOX • CODE • RESEARCH • REPEAT
     <tspan fill="#FBBF24" font-weight="bold"> _
       <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
     </tspan>
