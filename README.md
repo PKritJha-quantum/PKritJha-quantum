@@ -1,5 +1,15 @@
 ## Hi there 👋
 
+   /\   /\
+  //\\_//\\     ____     I am Priyakriti
+  \_     _/    /   /
+   / * * \    /^^^]
+   \_\O/_/    [   ]
+    /   \_    [   /
+    \     \_  /  /
+     [ [ /  \/ _/
+    _[ [ \  /_/
+
 <!--
 **PKritJha-quantum/PKritJha-quantum** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
