@@ -1,108 +1,109 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
   <defs>
-    <!-- Vibrant Modern Gradients -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1E1B4B" />
-      <stop offset="100%" stop-color="#311042" />
+    <!-- Dark Metallic Gradients -->
+    <linearGradient id="bgDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090B" />
+      <stop offset="100%" stop-color="#18181B" />
     </linearGradient>
 
-    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" />
-      <stop offset="50%" stop-color="#818CF8" />
-      <stop offset="100%" stop-color="#C084FC" />
+    <linearGradient id="armorLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#1E293B" />
     </linearGradient>
 
-    <linearGradient id="earGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F472B6" />
-      <stop offset="100%" stop-color="#FB923C" />
+    <linearGradient id="armorDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
     </linearGradient>
 
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#2DD4BF" />
-      <stop offset="100%" stop-color="#0284C7" />
+    <!-- Emerald Glow Gradient -->
+    <linearGradient id="emeraldGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
     </linearGradient>
 
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
+    <!-- Metallic Gold Border Gradient -->
+    <linearGradient id="goldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="40%" stop-color="#D97706" />
+      <stop offset="70%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+
+    <linearGradient id="tuskMetal" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94A3B8" />
+      <stop offset="50%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#CBD5E1" />
+    </linearGradient>
+
+    <filter id="emeraldNeon" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
   </defs>
 
-  <!-- Background Circle -->
-  <circle cx="200" cy="200" r="185" fill="url(#bgGrad)" />
-  <circle cx="200" cy="200" r="175" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1.5" stroke-dasharray="6 6" />
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bgDark)" rx="24" />
 
-  <!-- Decorative Accent Shapes -->
-  <circle cx="95" cy="110" r="6" fill="#F472B6" opacity="0.8" />
-  <circle cx="315" cy="140" r="4" fill="#38BDF8" opacity="0.8" />
-  <circle cx="290" cy="95" r="8" fill="#FB923C" opacity="0.6" />
+  <!-- Sharp Outer Hexagonal Golden Shield Frame -->
+  <polygon points="200,18 358,104 358,286 200,382 42,286 42,104" 
+           fill="none" stroke="url(#goldBorder)" stroke-width="3.5" />
+  <polygon points="200,30 346,111 346,279 200,370 54,279 54,111" 
+           fill="#0F172A" stroke="url(#goldBorder)" stroke-width="1.5" stroke-opacity="0.75" />
 
-  <!-- Ground Shadow -->
-  <ellipse cx="205" cy="325" rx="95" ry="12" fill="#0F0D26" opacity="0.7" />
+  <!-- Left Winged Ear (Angular Armor Plates) -->
+  <polygon points="135,105 55,80 40,155 85,220 130,190" fill="url(#armorDark)" stroke="#09090B" stroke-width="2" />
+  <polygon points="135,105 70,95 62,150 118,165" fill="url(#armorLight)" />
+  <polygon points="118,165 62,150 92,205 128,185" fill="#0F172A" />
+  <!-- Emerald Ear Trim -->
+  <polyline points="55,80 40,155 85,220" fill="none" stroke="#10B981" stroke-width="3" filter="url(#emeraldNeon)" />
 
-  <!-- Back Legs -->
-  <path d="M 155 245 L 155 315 C 155 320, 180 320, 180 315 L 180 245 Z" fill="#4F46E5" />
-  <path d="M 225 245 L 225 315 C 225 320, 250 320, 250 315 L 250 245 Z" fill="#4F46E5" />
+  <!-- Right Winged Ear (Angular Armor Plates) -->
+  <polygon points="265,105 345,80 360,155 315,220 270,190" fill="url(#armorDark)" stroke="#09090B" stroke-width="2" />
+  <polygon points="265,105 330,95 338,150 282,165" fill="url(#armorLight)" />
+  <polygon points="282,165 338,150 308,205 272,185" fill="#0F172A" />
+  <!-- Emerald Ear Trim -->
+  <polyline points="345,80 360,155 315,220" fill="none" stroke="#10B981" stroke-width="3" filter="url(#emeraldNeon)" />
 
-  <!-- Tail -->
-  <path d="M 122 195 Q 95 215 102 250" fill="none" stroke="#818CF8" stroke-width="5" stroke-linecap="round" />
-  <path d="M 102 250 L 95 262 L 108 260 Z" fill="#F472B6" />
+  <!-- Skull Crown & Brow Ridge -->
+  <polygon points="200,60 135,105 150,155 200,135 250,155 265,105" fill="url(#armorLight)" stroke="url(#goldBorder)" stroke-width="1.5" />
+  <polygon points="200,60 165,115 200,135 235,115" fill="#64748B" />
+  
+  <!-- Glowing Emerald Forehead Core -->
+  <polygon points="200,82 190,105 200,122 210,105" fill="#10B981" filter="url(#emeraldNeon)" />
+  <polygon points="200,88 194,105 200,116 206,105" fill="#A7F3D0" />
 
-  <!-- Main Body -->
-  <path d="M 120 205 
-           C 120 140, 165 115, 225 125 
-           C 265 130, 285 165, 280 215 
-           C 278 245, 255 260, 225 260 
-           L 155 260 
-           C 130 260, 120 235, 120 205 Z" 
-        fill="url(#bodyGrad)" />
+  <!-- Cheekbone Armor Plates -->
+  <polygon points="135,105 115,175 155,215 165,160" fill="url(#armorDark)" stroke="#09090B" stroke-width="2" />
+  <polygon points="265,105 285,175 245,215 235,160" fill="url(#armorDark)" stroke="#09090B" stroke-width="2" />
 
-  <!-- Front Legs -->
-  <path d="M 140 235 L 140 318 C 140 324, 168 324, 168 318 L 168 235 Z" fill="url(#accentGrad)" />
-  <path d="M 210 235 L 210 318 C 210 324, 238 324, 238 318 L 238 235 Z" fill="url(#accentGrad)" />
+  <!-- Fierce Angled Emerald Eyes -->
+  <polygon points="142,148 175,162 162,172 138,160" fill="#10B981" filter="url(#emeraldNeon)" />
+  <polygon points="150,153 170,162 161,167" fill="#FFFFFF" />
+  
+  <polygon points="258,148 225,162 238,172 262,160" fill="#10B981" filter="url(#emeraldNeon)" />
+  <polygon points="250,153 230,162 239,167" fill="#FFFFFF" />
 
-  <!-- Toenails -->
-  <path d="M 143 321 A 4 4 0 0 1 151 321 Z" fill="#E0F2FE" />
-  <path d="M 155 321 A 4 4 0 0 1 163 321 Z" fill="#E0F2FE" />
-  <path d="M 213 321 A 4 4 0 0 1 221 321 Z" fill="#E0F2FE" />
-  <path d="M 225 321 A 4 4 0 0 1 233 321 Z" fill="#E0F2FE" />
+  <!-- Massive Sweeping Tusks -->
+  <!-- Left Tusk -->
+  <path d="M 155 205 Q 90 235 65 160 Q 105 205 165 188 Z" fill="url(#tuskMetal)" stroke="#09090B" stroke-width="2" />
+  <path d="M 155 205 Q 95 232 65 160 Q 102 215 160 196 Z" fill="#64748B" />
 
-  <!-- Head & Trunk -->
-  <path d="M 215 125 
-           C 265 120, 295 145, 295 185 
-           C 295 215, 295 255, 315 260 
-           C 328 263, 335 250, 328 240 
-           C 324 235, 318 240, 320 245 
-           C 322 250, 315 252, 312 246 
-           C 305 230, 312 195, 280 195 
-           C 265 195, 255 215, 235 215 
-           C 210 215, 195 170, 215 125 Z" 
-        fill="url(#bodyGrad)" />
+  <!-- Right Tusk -->
+  <path d="M 245 205 Q 310 235 335 160 Q 295 205 235 188 Z" fill="url(#tuskMetal)" stroke="#09090B" stroke-width="2" />
+  <path d="M 245 205 Q 305 232 335 160 Q 298 215 240 196 Z" fill="#64748B" />
 
-  <!-- Decorative Forehead Mandala/Crown -->
-  <path d="M 262 135 L 270 145 L 262 155 L 254 145 Z" fill="#FDE047" filter="url(#glow)" />
-  <circle cx="262" cy="145" r="2.5" fill="#1E1B4B" />
-
-  <!-- Stylized Ear -->
-  <path d="M 222 138 
-           C 185 125, 165 155, 175 192 
-           C 182 218, 212 222, 228 202 
-           C 238 190, 235 150, 222 138 Z" 
-        fill="url(#earGrad)" />
-
-  <!-- Inner Ear Detail -->
-  <path d="M 216 148 
-           C 192 140, 180 160, 187 185 
-           C 192 202, 210 205, 220 192 Z" 
-        fill="#1E1B4B" opacity="0.25" />
-
-  <!-- Tusk -->
-  <path d="M 268 198 Q 295 218 318 195 Q 295 205 272 190 Z" fill="#F8FAFC" />
-
-  <!-- Eye -->
-  <circle cx="268" cy="166" r="6" fill="#0F172A" />
-  <circle cx="270" cy="164" r="2" fill="#FFFFFF" />
-
-  <!-- Cheek Blush -->
-  <ellipse cx="255" cy="180" rx="7" ry="4" fill="#F472B6" opacity="0.6" />
+  <!-- Segmented Armored Trunk -->
+  <!-- Upper Bridge -->
+  <polygon points="165,155 200,135 235,155 225,200 175,200" fill="url(#armorLight)" stroke="#09090B" stroke-width="2" />
+  <!-- Segment 1 -->
+  <polygon points="175,200 225,200 220,240 180,240" fill="url(#armorDark)" stroke="#09090B" stroke-width="2" />
+  <line x1="182" y1="205" x2="218" y2="205" stroke="#10B981" stroke-width="2" />
+  <!-- Segment 2 -->
+  <polygon points="180,240 220,240 214,280 186,280" fill="url(#armorLight)" stroke="#09090B" stroke-width="2" />
+  <line x1="186" y1="245" x2="214" y2="245" stroke="#10B981" stroke-width="2" />
+  <!-- Segment 3 -->
+  <polygon points="186,280 214,280 208,320 192,320" fill="url(#armorDark)" stroke="#09090B" stroke-width="2" />
+  <!-- Trunk Tip -->
+  <polygon points="192,320 208,320 200,348" fill="url(#emeraldGlow)" />
 </svg>
