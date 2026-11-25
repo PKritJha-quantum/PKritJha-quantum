@@ -1,22 +1,22 @@
 <svg width="1000" height="240" viewBox="0 0 1000 240" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Deep Obsidian & Emerald Cyberpunk Base -->
+    <!-- Deep Obsidian, Emerald & Subtle Crimson Cyberpunk Base -->
     <linearGradient id="bg" x1="0" y1="0" x2="1000" y2="240" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#050807"/>
-      <stop offset="50%" stop-color="#091A14"/>
-      <stop offset="100%" stop-color="#120E06"/>
+      <stop offset="55%" stop-color="#091A14"/>
+      <stop offset="100%" stop-color="#14090A"/>
     </linearGradient>
 
-    <!-- Animated Gold & Emerald Border -->
+    <!-- Animated Emerald, Gold & Crimson Border -->
     <linearGradient id="cyberBorder" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#10B981">
-        <animate attributeName="stop-color" values="#10B981;#F59E0B;#10B981" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="#10B981;#F59E0B;#DC2626;#10B981" dur="6s" repeatCount="indefinite"/>
       </stop>
       <stop offset="50%" stop-color="#F59E0B">
-        <animate attributeName="stop-color" values="#F59E0B;#10B981;#F59E0B" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="#F59E0B;#DC2626;#10B981;#F59E0B" dur="6s" repeatCount="indefinite"/>
       </stop>
-      <stop offset="100%" stop-color="#10B981">
-        <animate attributeName="stop-color" values="#10B981;#F59E0B;#10B981" dur="5s" repeatCount="indefinite"/>
+      <stop offset="100%" stop-color="#DC2626">
+        <animate attributeName="stop-color" values="#DC2626;#10B981;#F59E0B;#DC2626" dur="6s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
 
@@ -24,6 +24,12 @@
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
       <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#10B981" stroke-opacity="0.07" stroke-width="1"/>
     </pattern>
+
+    <!-- Glow Filter for Eyes & Crimson Core -->
+    <filter id="cyberGlow" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
   </defs>
 
   <!-- Card Background & Grid -->
@@ -31,90 +37,149 @@
   <rect width="1000" height="240" rx="14" fill="url(#grid)"/>
   <rect x="2" y="2" width="996" height="236" rx="12" stroke="url(#cyberBorder)" stroke-width="2.5"/>
 
-  <!-- Cyberpunk Corner Brackets -->
-  <path d="M 16 40 L 16 16 L 40 16" stroke="#FBBF24" stroke-width="3"/>
-  <path d="M 984 200 L 984 224 L 960 224" stroke="#10B981" stroke-width="3"/>
+  <!-- Cyberpunk Corner Brackets (Gold & Crimson) -->
+  <path d="M 16 42 L 16 16 L 42 16" stroke="#FBBF24" stroke-width="3"/>
+  <path d="M 984 198 L 984 224 L 958 224" stroke="#DC2626" stroke-width="3"/>
 
-  <!-- Floating Pixelated Sandust / Stardust Particles -->
+  <!-- Floating Pixelated Sandust / Ember Particles -->
   <rect x="140" y="200" width="3" height="3" fill="#FBBF24">
     <animate attributeName="y" values="220;20" dur="6s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0;0.9;0" dur="6s" repeatCount="indefinite"/>
   </rect>
-  <rect x="320" y="210" width="4" height="4" fill="#10B981">
+  <rect x="310" y="210" width="4" height="4" fill="#10B981">
     <animate attributeName="y" values="230;30" dur="8s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0;0.8;0" dur="8s" repeatCount="indefinite"/>
   </rect>
-  <rect x="520" y="190" width="3" height="3" fill="#F59E0B">
-    <animate attributeName="y" values="225;15" dur="5s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;1;0" dur="5s" repeatCount="indefinite"/>
+  <rect x="490" y="190" width="3" height="3" fill="#EF4444">
+    <animate attributeName="y" values="225;15" dur="5.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.95;0" dur="5.5s" repeatCount="indefinite"/>
   </rect>
-  <rect x="680" y="215" width="4" height="4" fill="#34D399">
+  <rect x="660" y="215" width="4" height="4" fill="#34D399">
     <animate attributeName="y" values="235;25" dur="7s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0;0.75;0" dur="7s" repeatCount="indefinite"/>
   </rect>
-  <rect x="760" y="180" width="3" height="3" fill="#FBBF24">
+  <rect x="750" y="180" width="3" height="3" fill="#F59E0B">
     <animate attributeName="y" values="210;40" dur="4.5s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0;0.9;0" dur="4.5s" repeatCount="indefinite"/>
   </rect>
 
   <!-- Vertical Cyberpunk Laser Scanner -->
-  <line x1="0" y1="0" x2="1000" y2="0" stroke="#10B981" stroke-opacity="0.35" stroke-width="2">
+  <line x1="0" y1="0" x2="1000" y2="0" stroke="#10B981" stroke-opacity="0.3" stroke-width="2">
     <animate attributeName="y1" values="10;230;10" dur="7s" repeatCount="indefinite"/>
     <animate attributeName="y2" values="10;230;10" dur="7s" repeatCount="indefinite"/>
   </line>
 
-  <!-- Rotating HUD Rings Behind Fox -->
-  <circle cx="870" cy="120" r="76" stroke="#10B981" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="12 8">
-    <animateTransform attributeName="transform" type="rotate" from="0 870 120" to="360 870 120" dur="20s" repeatCount="indefinite"/>
+  <!-- Rotating HUD Rings Centered at (865, 120) -->
+  <circle cx="865" cy="120" r="88" stroke="#10B981" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="14 8">
+    <animateTransform attributeName="transform" type="rotate" from="0 865 120" to="360 865 120" dur="22s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="870" cy="120" r="58" stroke="#F59E0B" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="6 6">
-    <animateTransform attributeName="transform" type="rotate" from="360 870 120" to="0 870 120" dur="14s" repeatCount="indefinite"/>
+  <circle cx="865" cy="120" r="74" stroke="#DC2626" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="4 8">
+    <animateTransform attributeName="transform" type="rotate" from="360 865 120" to="0 865 120" dur="15s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- Pixelated / Geometric Cyber Fox Emblem -->
-  <g transform="translate(830, 82)">
-    <!-- Ears -->
-    <polygon points="10,28 18,4 32,22" fill="#F59E0B"/>
-    <polygon points="70,28 62,4 48,22" fill="#F59E0B"/>
-    <polygon points="15,24 19,10 27,21" fill="#064E3B"/>
-    <polygon points="65,24 61,10 53,21" fill="#064E3B"/>
-    <!-- Head & Cheeks -->
-    <polygon points="10,28 40,20 70,28 74,48 40,72 6,48" fill="#D97706"/>
-    <polygon points="6,48 26,44 40,72" fill="#FEF3C7"/>
-    <polygon points="74,48 54,44 40,72" fill="#FEF3C7"/>
-    <!-- Glowing Pixel Emerald Eyes -->
-    <rect x="23" y="38" width="6" height="6" fill="#10B981">
-      <animate attributeName="fill" values="#10B981;#6EE7B7;#10B981" dur="2s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="51" y="38" width="6" height="6" fill="#10B981">
-      <animate attributeName="fill" values="#10B981;#6EE7B7;#10B981" dur="2s" repeatCount="indefinite"/>
-    </rect>
-    <!-- Pixel Nose -->
-    <rect x="37" y="64" width="6" height="5" fill="#050807"/>
+  <!-- ================= SOVEREIGN CYBER-LION EMBLEM ================= -->
+  <!-- Scaled to 0.40 and centered at (865, 120) -->
+  <g transform="translate(785, 40) scale(0.40)">
+    <!-- Back Crimson Mane Aura (Royal War-Mane) -->
+    <polygon points="200,32 164,84 236,84" fill="#991B1B"/>
+    <polygon points="122,52 104,114 164,84" fill="#7F1D1D"/>
+    <polygon points="278,52 296,114 236,84" fill="#7F1D1D"/>
+    <polygon points="56,126 104,114 84,186 42,164" fill="#991B1B"/>
+    <polygon points="344,126 296,114 316,186 358,164" fill="#7F1D1D"/>
+    <polygon points="48,204 84,186 96,264 58,252" fill="#7F1D1D"/>
+    <polygon points="352,204 316,186 304,264 342,252" fill="#651616"/>
+    <polygon points="96,264 138,294 148,348 106,326" fill="#991B1B"/>
+    <polygon points="304,264 262,294 252,348 294,326" fill="#7F1D1D"/>
+    <polygon points="200,372 162,324 238,324" fill="#991B1B"/>
+
+    <!-- Inner Gold & Amber Crown Mane -->
+    <polygon points="200,48 174,94 226,94" fill="#FBBF24"/>
+    <polygon points="200,48 200,94 226,94" fill="#D97706"/>
+    <polygon points="144,68 134,116 176,98" fill="#F59E0B"/>
+    <polygon points="256,68 266,116 224,98" fill="#B45309"/>
+
+    <polygon points="88,104 134,116 112,174 72,154" fill="#D97706"/>
+    <polygon points="312,104 266,116 288,174 328,154" fill="#B45309"/>
+
+    <polygon points="74,184 112,174 118,238 82,232" fill="#B45309"/>
+    <polygon points="326,184 288,174 282,238 318,232" fill="#92400E"/>
+
+    <polygon points="104,252 136,242 156,304 122,296" fill="#D97706"/>
+    <polygon points="296,252 264,242 244,304 278,296" fill="#B45309"/>
+    <polygon points="200,348 168,304 232,304" fill="#F59E0B"/>
+    <polygon points="200,348 200,304 232,304" fill="#D97706"/>
+
+    <!-- Angular Armored Ears -->
+    <polygon points="116,94 96,136 138,132" fill="#FBBF24"/>
+    <polygon points="117,106 106,130 130,128" fill="#090D0B"/>
+    <polygon points="284,94 304,136 262,132" fill="#D97706"/>
+    <polygon points="283,106 294,130 270,128" fill="#090D0B"/>
+
+    <!-- Sculpted Forehead & Heavy Brow Armor -->
+    <polygon points="200,88 134,122 146,168 200,148 254,168 266,122" fill="#E07A16"/>
+    <polygon points="200,88 168,128 200,148 232,128" fill="#FBBF24"/>
+
+    <!-- Royal Crimson & Emerald Forehead Crest -->
+    <polygon points="200,100 188,120 200,138 212,120" fill="#DC2626" filter="url(#cyberGlow)"/>
+    <polygon points="200,108 195,120 200,130 205,120" fill="#10B981"/>
+
+    <!-- Sharp Cheekbone Plates + Crimson War-Stripe -->
+    <polygon points="134,122 112,194 156,228 170,174" fill="#C2610C"/>
+    <polygon points="266,122 288,194 244,228 230,174" fill="#A85108"/>
+    <polygon points="122,182 146,192 142,202 118,192" fill="#DC2626"/>
+    <polygon points="278,182 254,192 258,202 282,192" fill="#DC2626"/>
+
+    <!-- Dark Brow Shadow & Piercing Emerald Eyes -->
+    <polygon points="138,154 182,168 176,176 134,162" fill="#090D0B"/>
+    <polygon points="262,154 218,168 224,176 266,162" fill="#090D0B"/>
+    <polygon points="142,162 176,172 164,182 138,172" fill="#2EE59D" filter="url(#cyberGlow)">
+      <animate attributeName="opacity" values="1;0.7;1" dur="2.5s" repeatCount="indefinite"/>
+    </polygon>
+    <polygon points="258,162 224,172 236,182 262,172" fill="#2EE59D" filter="url(#cyberGlow)">
+      <animate attributeName="opacity" values="1;0.7;1" dur="2.5s" repeatCount="indefinite"/>
+    </polygon>
+
+    <!-- Strong Nose Bridge -->
+    <polygon points="178,148 222,148 216,204 184,204" fill="#F59E0B"/>
+    <polygon points="200,148 222,148 216,204 200,204" fill="#D97706"/>
+
+    <!-- Confident, Stoic Muzzle & Jaw (Closed Sovereign Expression) -->
+    <polygon points="142,204 184,204 200,222 182,250 148,240" fill="#FEF3C7"/>
+    <polygon points="258,204 216,204 200,222 218,250 252,240" fill="#FDE68A"/>
+
+    <!-- Sharp Obsidian Nose -->
+    <polygon points="184,204 216,204 200,224" fill="#090D0B"/>
+
+    <!-- Firm Jawline & Chin Shield -->
+    <polygon points="164,250 236,250 220,264 180,264" fill="#090D0B"/>
+    <polygon points="160,264 240,264 218,304 182,304" fill="#FBBF24"/>
+    <polygon points="200,264 240,264 218,304 200,304" fill="#D97706"/>
+    <!-- Crimson Chin Gem -->
+    <polygon points="200,274 194,284 200,294 206,284" fill="#DC2626"/>
   </g>
 
   <!-- Top Tag with Blinking Cursor -->
   <text x="48" y="62" fill="#10B981" font-family="monospace" font-size="14" letter-spacing="2.5">
-    // CURIOUS FOX • CODE • RESEARCH • REPEAT
-    <tspan fill="#FBBF24" font-weight="bold"> _
+    // CURIOUS • CODE • RESEARCH • REPEAT
+    <tspan fill="#DC2626" font-weight="bold"> _
       <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
     </tspan>
   </text>
 
   <!-- Gold Display Name -->
   <text x="48" y="128" fill="#FBBF24" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="46">
-    PRIYAKRITI
+    PRIYAKRITI 
   </text>
 
   <!-- Subtitle -->
   <text x="48" y="172" fill="#D1FAE5" font-family="monospace" font-size="16" opacity="0.92">
-    Outfoxing complex problems across code &amp; research domains
+    Hunting down complex problems across code
   </text>
 
-  <!-- Bottom Pixel Status Bar -->
+  <!-- Bottom Pixel Status Bar (Emerald • Gold • Crimson) -->
   <rect x="48" y="194" width="8" height="8" fill="#10B981"/>
   <rect x="62" y="194" width="8" height="8" fill="#F59E0B"/>
-  <rect x="76" y="194" width="8" height="8" fill="#10B981" opacity="0.5"/>
+  <rect x="76" y="194" width="8" height="8" fill="#DC2626"/>
   <text x="94" y="202" fill="#6EE7B7" font-family="monospace" font-size="12" letter-spacing="1.5">
     SYS.STATUS: ONLINE // EXPLORING &amp; BUILDING
   </text>
