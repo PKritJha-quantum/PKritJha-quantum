@@ -1,4 +1,5 @@
-![Header](./Banner.svg)
+![Header](Banner.svg?v=3)
+
 
 <br/>
 
