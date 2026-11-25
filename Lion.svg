@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Dark Metallic Gradients -->
+    <linearGradient id="bgDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090B" />
+      <stop offset="100%" stop-color="#18181B" />
+    </linearGradient>
+
+    <linearGradient id="armorLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+
+    <linearGradient id="armorDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Emerald Glow Gradient -->
+    <linearGradient id="emeraldGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+
+    <!-- Metallic Gold Border Gradient -->
+    <linearGradient id="goldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="40%" stop-color="#D97706" />
+      <stop offset="70%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+
+    <linearGradient id="fangMetal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+
+    <filter id="emeraldNeon" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bgDark)" rx="24" />
+
+  <!-- Sharp Outer Hexagonal Golden Shield Frame -->
+  <polygon points="200,18 358,104 358,286 200,382 42,286 42,104" 
+           fill="none" stroke="url(#goldBorder)" stroke-width="3.5" />
+  <polygon points="200,30 346,111 346,279 200,370 54,279 54,111" 
+           fill="#0F172A" stroke="url(#goldBorder)" stroke-width="1.5" stroke-opacity="0.75" />
+
+  <!-- Outer Spiked Mane (Back Layer) -->
+  <!-- Top Crown Spikes -->
+  <polygon points="200,42 175,85 225,85" fill="url(#armorDark)" stroke="url(#goldBorder)" stroke-width="1.5" />
+  <polygon points="150,55 140,105 180,90" fill="url(#armorLight)" stroke="#09090B" stroke-width="2" />
+  <polygon points="250,55 260,105 220,90" fill="url(#armorLight)" stroke="#09090B" stroke-width="2" />
+
+  <!-- Upper Side Mane Blades -->
+  <polygon points="95,85 135,105 115,155 72,135" fill="url(#armorDark)" stroke="#09090B" stroke-width="2" />
+  <polygon points="305,85 265,105 285,155 328,135" fill="url(#armorDark)" stroke="#09090B" stroke-width="2" />
+
+  <!-- Mid Side Mane Blades with Emerald Trim -->
+  <polygon points="58,165 115,155 110,215 62,210" fill="url(#armorLight)" stroke="#09090B" stroke-width="2" />
+  <polyline points="95,85 72,135 58,165 62,210" fill="none" stroke="#10B981" stroke-width="3" filter="url(#emeraldNeon)" />
+
+  <polygon points="342,165 285,155 290,215 338,210" fill="url(#armorLight)" stroke="#09090B" stroke-width="2" />
+  <polyline points="305,85 328,135 342,165 338,210" fill="none" stroke="#10B981" stroke-width="3" filter="url(#emeraldNeon)" />
+
+  <!-- Lower Mane & Beard Spikes -->
+  <polygon points="75,235 115,215 135,275 95,275" fill="url(#armorDark)" stroke="#09090B" stroke-width="2" />
+  <polygon points="325,235 285,215 265,275 305,275" fill="url(#armorDark)" stroke="#09090B" stroke-width="2" />
+
+  <polygon points="115,285 150,275 165,330 130,320" fill="url(#armorLight)" stroke="#09090B" stroke-width="2" />
+  <polygon points="285,285 250,275 235,330 270,320" fill="url(#armorLight)" stroke="#09090B" stroke-width="2" />
+  <polygon points="200,355 170,315 230,315" fill="url(#armorDark)" stroke="url(#goldBorder)" stroke-width="1.5" />
+
+  <!-- Armored Ears -->
+  <polygon points="122,95 105,125 135,128" fill="url(#armorLight)" stroke="url(#goldBorder)" stroke-width="1.5" />
+  <polygon points="278,95 295,125 265,128" fill="url(#armorLight)" stroke="url(#goldBorder)" stroke-width="1.5" />
+
+  <!-- Forehead & Heavy Brow Armor -->
+  <polygon points="200,82 135,115 148,162 200,145 252,162 265,115" fill="url(#armorLight)" stroke="#09090B" stroke-width="2" />
+  <polygon points="200,82 168,125 200,145 232,125" fill="#64748B" />
+
+  <!-- Glowing Emerald Forehead Crest -->
+  <polygon points="200,96 192,116 200,132 208,116" fill="#10B981" filter="url(#emeraldNeon)" />
+  <polygon points="200,102 195,116 200,126 205,116" fill="#A7F3D0" />
+
+  <!-- Cheekbone Plates -->
+  <polygon points="135,115 112,185 155,225 168,170" fill="url(#armorDark)" stroke="#09090B" stroke-width="2" />
+  <polygon points="265,115 288,185 245,225 232,170" fill="url(#armorDark)" stroke="#09090B" stroke-width="2" />
+
+  <!-- Fierce Angled Emerald Eyes -->
+  <polygon points="142,154 176,168 164,178 138,165" fill="#10B981" filter="url(#emeraldNeon)" />
+  <polygon points="150,159 170,168 162,173" fill="#FFFFFF" />
+
+  <polygon points="258,154 224,168 236,178 262,165" fill="#10B981" filter="url(#emeraldNeon)" />
+  <polygon points="250,159 230,168 238,173" fill="#FFFFFF" />
+
+  <!-- Snout & Nose Bridge -->
+  <polygon points="178,145 222,145 215,205 185,205" fill="url(#armorLight)" stroke="#09090B" stroke-width="2" />
+  <!-- Glowing Emerald Nose -->
+  <polygon points="186,205 214,205 200,224" fill="url(#emeraldGlow)" filter="url(#emeraldNeon)" />
+
+  <!-- Muzzle & Snarling Jaw -->
+  <polygon points="155,215 186,205 200,224 185,248 152,242" fill="url(#armorLight)" stroke="#09090B" stroke-width="2" />
+  <polygon points="245,215 214,205 200,224 215,248 248,242" fill="url(#armorLight)" stroke="#09090B" stroke-width="2" />
+
+  <!-- Dark Roaring Mouth Cavity -->
+  <polygon points="168,245 232,245 222,282 178,282" fill="#09090B" />
+  <line x1="185" y1="265" x2="215" y2="265" stroke="#10B981" stroke-width="2" filter="url(#emeraldNeon)" />
+
+  <!-- Sharp Metallic Fangs -->
+  <!-- Upper Fangs -->
+  <polygon points="170,244 182,244 175,274" fill="url(#fangMetal)" />
+  <polygon points="230,244 218,244 225,274" fill="url(#fangMetal)" />
+  <!-- Lower Fangs -->
+  <polygon points="178,282 188,282 183,262" fill="url(#fangMetal)" />
+  <polygon points="222,282 212,282 217,262" fill="url(#fangMetal)" />
+
+  <!-- Armored Chin Plate -->
+  <polygon points="162,282 238,282 220,315 180,315" fill="url(#armorDark)" stroke="url(#goldBorder)" stroke-width="1.5" />
+</svg>
