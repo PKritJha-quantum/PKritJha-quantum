@@ -2,7 +2,7 @@
 
 <br/>
 
-> *"Curious little clever fox"*
+> *"Curious little clever cub"*
 
 ---
 
