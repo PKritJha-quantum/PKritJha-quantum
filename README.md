@@ -6,7 +6,7 @@
 
 ---
 
-### 🦊 `About Me`
+### `About Me`
 ```yaml
 identity:
   name: "Priyakriti (also called PJ)"
