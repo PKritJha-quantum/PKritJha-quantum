@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Subtle Square Grid Pattern matching reference background -->
+    <pattern id="techGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#182C20" stroke-width="1" />
+    </pattern>
+
+    <!-- Subtle Emerald Glow for Eyes -->
+    <filter id="mintGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Deep Forest-Black Background & Grid -->
+  <rect width="400" height="400" fill="#0B130E" rx="24" />
+  <rect width="400" height="400" fill="url(#techGrid)" rx="24" />
+
+  <!-- Horizontal Emerald Horizon Line -->
+  <line x1="0" y1="125" x2="400" y2="125" stroke="#135E46" stroke-width="2" />
+
+  <!-- Concentric Dashed Rings (Outer Emerald & Inner Amber-Gold) -->
+  <circle cx="200" cy="205" r="165" fill="none" stroke="#16654B" stroke-width="2.5" stroke-dasharray="12 10" />
+  <circle cx="200" cy="205" r="132" fill="none" stroke="#855312" stroke-width="2.5" stroke-dasharray="8 8" />
+
+  <!-- Accent Pixel Dot -->
+  <rect x="28" y="268" width="5" height="5" fill="#B47318" />
+
+  <!-- ================= PANTHER GEOMETRIC EMBLEM ================= -->
+
+  <!-- Sleek Swept Panther Ears (Amber-Gold Trim, Dark Emerald Inner) -->
+  <polygon points="118,86 92,136 144,124" fill="#D97706" />
+  <polygon points="118,98 104,130 135,122" fill="#0B3B2B" />
+
+  <polygon points="282,86 308,136 256,124" fill="#B45309" />
+  <polygon points="282,98 296,130 265,122" fill="#0B3B2B" />
+
+  <!-- Broad Crown & Furrowed Brow Facets -->
+  <polygon points="200,88 134,112 146,162 200,144 254,162 266,112" fill="#1C2822" />
+  <polygon points="200,88 168,126 200,144 232,126" fill="#27362E" />
+  <!-- Subtle Amber Forehead Mark -->
+  <polygon points="200,104 195,118 200,130 205,118" fill="#D97706" />
+
+  <!-- Wide Muscular Cheekbones (Stealth Charcoal-Forest Facets) -->
+  <polygon points="134,112 96,184 146,222 164,166" fill="#141E19" />
+  <polygon points="96,184 114,226 146,222" fill="#0F1713" />
+
+  <polygon points="266,112 304,184 254,222 236,166" fill="#111A15" />
+  <polygon points="304,184 286,226 254,222" fill="#0B110E" />
+
+  <!-- Sharp Amber Cheek Whisker-Lines -->
+  <polyline points="104,188 132,196" fill="none" stroke="#D97706" stroke-width="2" />
+  <polyline points="296,188 268,196" fill="none" stroke="#B45309" stroke-width="2" />
+
+  <!-- Fierce Predatory Mint-Emerald Eyes -->
+  <polygon points="138,152 176,166 162,176 134,164" fill="#2EE59D" filter="url(#mintGlow)" />
+  <polygon points="262,152 224,166 238,176 266,164" fill="#2EE59D" filter="url(#mintGlow)" />
+
+  <!-- Broad Nose Bridge -->
+  <polygon points="178,144 222,144 216,202 184,202" fill="#24332B" />
+  <polygon points="200,144 222,144 216,202 200,202" fill="#1A2620" />
+
+  <!-- Snarling Upper Muzzle Facets -->
+  <polygon points="146,200 184,202 200,220 182,242 144,234" fill="#1C2822" />
+  <polygon points="254,200 216,202 200,220 218,242 256,234" fill="#16201B" />
+
+  <!-- Amber-Gold Nose -->
+  <polygon points="184,202 216,202 200,220" fill="#E07A16" />
+  <polygon points="200,202 216,202 200,220" fill="#B45309" />
+
+  <!-- Deep Roaring Maw -->
+  <polygon points="164,240 236,240 222,282 178,282" fill="#060907" />
+
+  <!-- Razor-Sharp Cream-White Fangs -->
+  <!-- Upper Long Canine Fangs -->
+  <polygon points="166,240 180,240 172,272" fill="#FEF3C7" />
+  <polygon points="234,240 220,240 228,272" fill="#FDE68A" />
+  <!-- Upper Front Incisors -->
+  <polygon points="186,240 194,240 190,254" fill="#FEF3C7" />
+  <polygon points="214,240 206,240 210,254" fill="#FDE68A" />
+  <!-- Lower Canine Fangs -->
+  <polygon points="176,282 186,282 181,260" fill="#FEF3C7" />
+  <polygon points="224,282 214,282 219,260" fill="#FDE68A" />
+
+  <!-- Sleek Armored Chin & Jawline -->
+  <polygon points="144,234 164,240 178,282 156,288" fill="#141E19" />
+  <polygon points="256,234 236,240 222,282 244,288" fill="#0F1713" />
+  <polygon points="156,288 178,282 222,282 244,288 216,318 184,318" fill="#1C2822" />
+  <polygon points="200,282 244,288 216,318 200,318" fill="#141E19" />
+  <!-- Amber Chin Accent -->
+  <polygon points="184,318 216,318 200,330" fill="#D97706" />
+</svg>
